@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 Praktikum Front End</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 12px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #tombolTampil {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        #tombolHapus {
+            background-color: #f44336;
+            color: white;
+        }
+
+        #hasil {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tugas 2 Praktikum Front End</h1>
+
+    <button id="tombolTampil" onclick="tampilkanData()">
+        Tampilkan Nama & NIM
+    </button>
+
+    <button id="tombolHapus" onclick="hapusData()">
+        Hapus Nama & NIM
+    </button>
+
+    <div id="hasil"></div>
+
+    <script>
+        function tampilkanData() {
+            document.getElementById("hasil").innerHTML =
+                "Nama: Dava Briansyah<br>NIM: 535250035";
+        }
+
+        function hapusData() {
+            document.getElementById("hasil").innerHTML = "";
+        }
+    </script>
+
+</body>
+</html
