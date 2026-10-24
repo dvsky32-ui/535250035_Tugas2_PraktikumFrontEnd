@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 Praktikum Front End</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f2f2f2;
+        }
+
+        button {
+            padding: 12px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .nama {
+            background-color: rgb(10, 10, 10);
+            color: white;
+        }
+
+        .nim {
+            background-color: rgb(1, 1, 26);
+            color: white;
+        }
+
+        .gabungan {
+            background-color: rgb(29, 19, 2);
+            color: white;
+        }
+
+        .hapus {
+            background-color: rgb(226, 7, 7);
+            color: white;
+        }
+
+        #data {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tugas 2 Praktikum Front End</h1>
+
+    <button class="nama" onclick="tampilkanNama()">
+        Tampilkan Nama
+    </button>
+
+    <button class="nim" onclick="tampilkanNIM()">
+        Tampilkan NIM
+    </button>
+
+    <button class="gabungan" onclick="tampilkanGabungan()">
+        Tampilkan Nama + NIM
+    </button>
+
+    <button class="hapus" onclick="hapusData()">
+        Hapus
+    </button>
+
+    <div id="data"></div>
+
+    <script>
+        function tampilkanNama() {
+            document.getElementById("data").innerHTML =
+                "Nama: Dava Briansyah";
+        }
+
+        function tampilkanNIM() {
+            document.getElementById("data").innerHTML =
+                "NIM: 535250035";
+        }
+
+        function tampilkanGabungan() {
+            document.getElementById("data").innerHTML =
+                "Nama: Dava Briansyah<br>NIM: 535250035";
+        }
+
+        function hapusData() {
+            document.getElementById("data").innerHTML = "";
+        }
+    </script>
+
+</body>
+</html>
